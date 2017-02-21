@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <link rel="stylesheet" href="style.css">
+    <script src="numberguess.js"></script>
+    <scrit src=""></scrit>
+    <title>Guess the number game</title>
+</head>
+
+    <body onload="init()">
+        <div id="container">
+            <div class="panel">
+                <h2>I have a random number<br>between 1-100</h2>
+                <h3>Dare to guess</h3>
+                <p>Select Difficulty setting:</p>
+                <button id="easyBtn" onclick="easyMode()" class="">Easy :Guess in 10 attempts(default)</button>
+                <button id="hardBtn" onclick="hardMode()" class="">Hard : Guess in 5 attempts</button>
+                <button id="newGameBtn" onclick="newGame()">NEW GAME</button><hr>
+            </div>
+        
+            <div class="panel">
+                <h3 id="output">Enter your guess below &amp;Press Enter</h3>    
+                <input type="number" id="inputBox" onchange="compareGuess()">
+                <p>Number of Previous attempts:<span id="attempts"></span> </p>
+            </div> 
+            
+            <div class="panel">
+            
+                <p>Your previous gusses:</p>
+                <p id="guessLog"></p>
+            </div>
+            
+            
+            
+     </div>         
+            
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
